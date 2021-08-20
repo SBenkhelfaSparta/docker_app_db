@@ -4,8 +4,6 @@ services:
     build: ./db
     restart: always
     ports: [27017:27017]
-    volumes:
-      - ./mongod.conf:/etc/mongod.conf
 
   web:
     # start up the web app image and map to localhost
